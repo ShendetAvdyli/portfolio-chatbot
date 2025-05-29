@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="styles.css?v=1.1">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shendet Avdyli | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <section id="logo">
+            <div>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </section>
+    </nav>
+
+    <header>
+        <div>
+            <img src="Images/shendeti2.jpeg" alt="Shendet">
+            <h1>Shendet Avdyli</h1>
+            <p>Computing and Information Technologies student with a <br> strong focus on Cybersecurity and Web Development & Design.</p>
+        </div>
+    </header>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Cybersecurity Awareness Hub</h3>
+                <img src="Images/cybersecurity.jpg" alt="Cybersecurity Awareness Hub">
+            </div>
+
+            <div class="project">
+                <h3>Tech Job Platform</h3>
+                <img src="Images/platform.jpg" alt="Platform">
+            </div>
+        </div>
+
+        <div id="portofolio">
+            <h3><a href="#" class="scroll-top-link">Personal Portfolio Website</a></h3>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact me</h2>
+        <p>Feel free to reach out for collaborations or just to say hi!</p>
+        <p>Email : shendet.avdyli@gmail.com</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Shendet Avdyli. All rights reserved.
+    </footer>
+
+   
+    <div class="chatbot-container">
+        <div class="chatbot-icon" onclick="openChatbot()">💬</div>
+        <div class="chatbot-popup" id="chatbot-popup">
+            <div class="chatbot-header">
+                <span>How can I help you?</span>
+                <button onclick="closeChatbot()">X</button>
+            </div>
+            <div class="chatbot-body">
+                <div id="chatbot-messages"></div>
+                <input type="text" id="user-input" placeholder="Ask me something...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+    <script src="qa.js"></script>  
+</html>

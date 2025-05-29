@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #1a1a21;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    position: relative;
+    height: 120vh;
+    right: 10%;
+    background-color: #1e1e2f url('shendeti.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Pirata One', sans-serif;
+    font-size: 10rem;
+    font-weight: 100;
+}
+
+header p {
+    font-size: 1.7rem;
+    margin: 10px 0;
+}
+
+header img {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin-top: 300px;
+    margin-right: 25%;
+    height: 450px;
+    width: 250px;
+    border: 5px solid rgb(16, 12, 44);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 11%;
+    background: rgba(30, 30, 47, 0.9);
+    padding: 1px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6f61;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    left: 10%;
+}
+
+#projects {
+    text-align: center;
+    margin-top: 10%;
+    background-color: #1a1a21;
+    margin-left: 40%;
+    font-size: 7rem;
+    font-family: 'Pirata One', sans-serif;
+}
+
+.projects-container { 
+    margin-top: -15%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 150px;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+.project {
+    text-align: left;
+    margin-left: auto;
+    width: 300px;
+}
+
+.project img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Portfolio */
+#portofolio {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#contact {
+    background-color: #1a1a21;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e2f;
+    color: #fff;
+}
+
+/* Chatbot Icon */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chatbot-icon {
+    background-color: white;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.chatbot-icon:hover {
+    transform: scale(1.1);
+}
+
+.scroll-top-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.scroll-top-link:hover {
+    color: #1e2453; 
+    cursor: pointer;
+}
+
+
+/* Chatbot Popup */
+.chatbot-popup {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(131, 118, 118, 0.3);
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.chatbot-header {
+    background-color: #357a94;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.chatbot-header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.chatbot-body {
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.chatbot-body input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chatbot-body button {
+    background-color: #357a94;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.chatbot-body button:hover {
+    background-color: #3faad1;
+}
+
+/* Chat Messages */
+.chat-message {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-message {
+    background-color: #357a94;
+    color: white;
+    align-self: flex-end; 
+}
+
+.bot-message {
+    background-color: #eee;
+    color: #333;
+    align-self: flex-start; 
+}
+
+.user-message, .bot-message {
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.user-message {
+    background-color: #357a94;
+    color: white;
+}
+
+.bot-message {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 6rem;
+    }
+    header p {
+        font-size: 1.2rem;
+    }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 4rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    header p {
+        font-size: 0.9rem;
+    }
+    header img {
+        width: 100%;
+    }
+}
